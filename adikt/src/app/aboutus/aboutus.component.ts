@@ -13,18 +13,16 @@ export interface Employee{
   styleUrls: ['./aboutus.component.scss']
 })
 export class AboutusComponent implements OnInit {
+
+  employees: Employee[] =[
+{id: '1', name:'Devshan', email: 'devshan@gmail.com', password: '123'},
+{id: '2', name:'Sithira', email: 'sithira@gmail.com', password: '123'},
+{id: '1', name:'Mewan', email: 'mewan@gmail.com', password: '123'}
+  ] ;    
+
    constructor() {}
   ngOnInit(){}
 
-  show()
-  {
-    alert('Hello World');
-    console.log('Hello World');
-  }
-
-  show1()
-  {
-    alert('Hello World!!');
-    console.log('Hello World!!')
-  }
+  
+  
 }
